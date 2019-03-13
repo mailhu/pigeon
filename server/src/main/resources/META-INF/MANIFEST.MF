@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Class-Path: log4j-to-slf4j-2.11.2.jar PushJavaSDK.jar jackson-datatype
+ -jsr310-2.9.8.jar spring-jcl-5.1.5.RELEASE.jar jul-to-slf4j-1.7.25.ja
+ r logback-classic-1.2.3.jar spring-boot-starter-json-2.1.3.RELEASE.ja
+ r spring-boot-starter-tomcat-2.1.3.RELEASE.jar hibernate-validator-6.
+ 0.14.Final.jar spring-web-5.1.5.RELEASE.jar spring-webmvc-5.1.5.RELEA
+ SE.jar jboss-logging-3.3.2.Final.jar spring-context-5.1.5.RELEASE.jar
+  javax.annotation-api-1.3.2.jar jackson-module-parameter-names-2.9.8.
+ jar spring-core-5.1.5.RELEASE.jar classmate-1.4.0.jar validation-api-
+ 2.0.1.Final.jar spring-boot-starter-2.1.3.RELEASE.jar jackson-databin
+ d-2.9.8.jar spring-boot-starter-logging-2.1.3.RELEASE.jar jackson-cor
+ e-2.9.8.jar spring-boot-starter-web-2.1.3.RELEASE.jar log4j-api-2.11.
+ 2.jar spring-aop-5.1.5.RELEASE.jar jackson-annotations-2.9.0.jar tomc
+ at-embed-core-9.0.16.jar spring-boot-autoconfigure-2.1.3.RELEASE.jar 
+ jackson-datatype-jdk8-2.9.8.jar spring-boot-2.1.3.RELEASE.jar tomcat-
+ embed-el-9.0.16.jar logback-core-1.2.3.jar slf4j-api-1.7.25.jar sprin
+ g-beans-5.1.5.RELEASE.jar spring-expression-5.1.5.RELEASE.jar snakeya
+ ml-1.23.jar tomcat-embed-websocket-9.0.16.jar
+Main-Class: com.example.demo.DemoApplication
+
