@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        //信鸽官网上注册的包名.注意application ID 和当前的应用包名以及 信鸽官网上注册应用的包名必须一致。
+        applicationId "com.example.demo"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        //根据需要 自行选择添加的对应cpu类型的.so库。
+        ndk {
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        //填写accessid和和accesskey
+        manifestPlaceholders = [
+                XG_ACCESS_ID:"注册应用的accessid",
+                XG_ACCESS_KEY:"注册应用的accesskey",
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    //信鸽普通版本jar，不包含厂商通道
+    implementation 'com.tencent.xinge:xinge:4.0.5-release'
+    //jg包
+    implementation 'com.tencent.jg:jg:1.1'
+    //wup包
+    implementation 'com.tencent.wup:wup:1.0.0.E-release'
+    //mid包，minSdkVersion 14
+    implementation 'com.tencent.mid:mid:4.0.7-Release'
+
+    //引入OkGo框架进行后台数据请求
+    implementation 'com.lzy.net:okgo:3.0.4'
+    //EventBus用于广播与活动之间的通信
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //解析json数据
+    implementation 'com.google.code.gson:gson:2.8.5'
+}
