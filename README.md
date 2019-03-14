@@ -57,6 +57,7 @@ private final static String URL = "http://192.168.43.188:8080/api/mailbox";
 ## 测试与测试效果
 如果是服务器是公网IP，可以直接测试本推送服务，若不是服务器是使用本地的电脑，请确保手机和电脑连接到同一个WiFi中才可以成功测试推送服务。注意：无论公网IP还是私网IP，服务器都要在防火墙中打开8080端口。
 ![](https://github.com/mailhu/pigeon/blob/master/image/login.gif)
+
 ![](https://github.com/mailhu/pigeon/blob/master/image/user_1.gif)
 ![](https://github.com/mailhu/pigeon/blob/master/image/user_2.gif)
 
