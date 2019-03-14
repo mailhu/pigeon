@@ -11,10 +11,10 @@ import java.util.Map;
 class PushService {
 
     //填写你信鸽提供给你的accessId
-    private final static long accessId = 0;
+    private final static long ACCESS_ID = 0;
 
     //填写你信鸽提供给你的secretKey
-    private final static String secretKey = "";
+    private final static String SECRET_KEY = "";
 
     /**
      * 调用信鸽后台API，让信鸽把消息推送到移动端。
@@ -36,7 +36,7 @@ class PushService {
         message.setCustom(map);         //设置自定义的key-value
 
         //推送消息
-        XingeApp xingeApp = new XingeApp(accessId, secretKey);
+        XingeApp xingeApp = new XingeApp(ACCESS_ID, SECRET_KEY);
         //调用推送消息给单个账号的方法
         //参数一填0即可，参数二为推送目标账号，参数三为消息内容
         //返回值为推送结果
