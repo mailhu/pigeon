@@ -3,6 +3,8 @@
 ## Pigeon的简介
 Pigeon是基于信鸽设计一个微型推送服务的示例，它是使用Spring Boot + 信鸽服务端SDK + 信鸽Android SDK来搭建的微型的推送服务。本仓库中包括有服务端和客户端的完整示例代码，还有信鸽Java服务端文档和SDK的文件目录。
 
+相关阅读：[《基于信鸽设计一个微型推送服务》](https://www.jianshu.com/p/ada6abb078db)
+
 ## Pigeon的目录
 - **server** : 服务端的源码，使用IDEA开发工具打开。
 - **client** : 客户端的源码，使用Android Studio开发工具打开。
